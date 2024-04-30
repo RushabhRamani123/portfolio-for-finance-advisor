@@ -1,14 +1,21 @@
 import './service.css';
 import AOS from 'aos';  
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect , useState} from "react";
 import Services_Slider from './Services_Slider';
+import axios from 'axios';
+
 const Services = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [request, setMessage] = useState('');
   useEffect(() => {
     AOS.init({
       duration: 800,
     });
   })
+  
   return (
     <div id="services">
       <h1 data-aos="fade-right" style={{ textAlign: 'center', marginTop: '100px', color: 'green' }}>
@@ -40,7 +47,7 @@ const Services = () => {
           <form>
             <div className="form-field" >
               <p>
-                <select>
+                <select onChange={(e) => {setMessage(e.target.value)}}>
                   <option value="How can we help">How can we help</option>
                   <option value="Life insurance planning for family members">Life insurance planning for family members</option>
                   <option value="Retirement Planning">Retirement Planning</option>
@@ -57,22 +64,49 @@ const Services = () => {
             </div>
             <div className="form-field">
               <p>
-                <input type="text" name="your-name" placeholder="Your Name" />
+                <input type="text" onChange={(e) => {setName(e.target.value)}} name="your-name" placeholder="Your Name" />
               </p>
             </div>
             <div className="form-field">
               <p>
-                <input type="tel" name="your-phone" placeholder="Your Phone Number*" />
+                <input type="tel" onChange={(e) => {setPhone(e.target.value)}} name="your-phone" placeholder="Your Phone Number*" />
               </p>
             </div>
             <div className="form-field">
               <p>
-                <input type="email" name="your-email" placeholder="Your Email*" />
+                <input type="email" onChange={(e) => {setEmail(e.target.value)}} name="your-email" placeholder="Your Email*" />
               </p>
             </div>
             <div className="form-field">
-              <p onClick={() => {alert("Thank you for contacting us. We will get back to you shortly.")}}>
-                <input type="submit" value="Submit" />
+                  <p
+                    style={{
+                      color: '#fff',
+                      cursor: 'pointer',
+                      display: 'inline-block',
+                      padding: '10px 20px',
+                      borderRadius: '5px',
+                      backgroundColor: '#97CD47',
+                      border: 'none',
+                    }}
+                    onClick={() => {
+                      if (name !== '' || email !== '' || phone !== '' || request !== '') {
+                        axios
+                          .post('http://localhost:8000/get-form-data', { request, name, email, phone })
+                          .then((response) => {
+                            console.log(response.data); // Access the response data
+                            // Handle the response data as needed
+                          })
+                          .catch((error) => {
+                            console.error('Error:', error);
+                            // Handle the error
+                          });
+                        alert('Form submitted successfully');
+                      }
+                      else {
+                        alert('Please fill all the fields');
+                      }
+                  }}>
+                   Submit
               </p>
             </div>
           </form>

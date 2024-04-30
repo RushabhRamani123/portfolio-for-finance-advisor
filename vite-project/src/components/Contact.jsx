@@ -1,11 +1,15 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
-
+import { useEffect , useState} from "react";
+import axios from 'axios';
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 5000 });
   }, []);
+  const [name, setName] = useState(''); 
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [request, setMessage] = useState(''); 
 
   const responsiveStyles = {
     '@media (max-width: 420px)': {
@@ -35,25 +39,44 @@ const Contact = () => {
           <form data-aos="fade-right">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', marginBottom: '1rem', ...responsiveStyles['@media (max-width: 420px)'] }}>
               <div>
-                <input style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="text" placeholder="Your Name *" required />
+                <input
+                  onChange={(e) => setName(e.target.value)}
+                  style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="text" placeholder="Your Name *" required />
               </div>
               <div>
-                <input style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="email" placeholder="Your Email *" required />
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="email" placeholder="Your Email *" required />
               </div>
               <div>
-                <input style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="text" placeholder="Your Subject" />
+                <input
+                  onChange={(e) => setSubject(e.target.value)}
+                  style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', ...responsiveStyles['@media (max-width: 420px)'].input }} type="text" placeholder="Your Subject" />
               </div>
             </div>
             <div style={{ marginBottom: '1rem' }}>
-              <textarea style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', minHeight: '150px', ...responsiveStyles['@media (max-width: 420px)'].textarea }} placeholder="Your message"></textarea>
+              <textarea
+                onChange={(e) => setMessage(e.target.value)}
+                style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', borderRadius: '0.25rem', border: '1px solid #ccc', minHeight: '150px', ...responsiveStyles['@media (max-width: 420px)'].textarea }} placeholder="Your message"></textarea>
             </div>
             <div style={{ display: 'flex', flexDirection: window.innerWidth<=420?'column':'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', ...responsiveStyles['@media (max-width: 420px)'] }}>
               <div style={{ fontSize: '0.9rem', color: '#666' }}>
                 <strong>Note:</strong> Your email address will not be published.
               </div>
-              <button style={{ backgroundColor: '#333', color: '#fff', padding: '0.75rem 1.5rem', fontSize: '1rem', borderRadius: '0.25rem', border: 'none', cursor: 'pointer', transition: 'background-color 0.3s ease', ...responsiveStyles['@media (max-width: 420px)'].button }} type="submit">
+              <div
+                onClick={() => {
+                  if (name !== '' || email !== '' || subject !== '' || request !== '') {
+                    // alert('Please fill in all fields.');}
+                    axios.post("http://localhost:8000/send-email",{name,email,subject,request} )
+                    alert('Your message has been sent. Thank you!');
+                  }
+                  else {
+                    alert('Pls fill all the fields');
+                  }
+                }}
+                style={{ backgroundColor: '#333', color: '#fff', padding: '0.75rem 1.5rem', fontSize: '1rem', borderRadius: '0.25rem', border: 'none', cursor: 'pointer', transition: 'background-color 0.3s ease', ...responsiveStyles['@media (max-width: 420px)'].button }} type="submit">
                 Send Message
-              </button>
+              </div>
             </div>
           </form>
         </div>
