@@ -67,7 +67,7 @@ const Contact = () => {
                 onClick={() => {
                   if (name !== '' || email !== '' || subject !== '' || request !== '') {
                     // alert('Please fill in all fields.');}
-                    axios.post("http://localhost:8000/send-email",{name,email,subject,request} )
+                    axios.post("https://portfolio-for-finance-advisor-sb2q.vercel.app/send-email",{name,email,subject,request} )
                     alert('Your message has been sent. Thank you!');
                   }
                   else {

@@ -91,7 +91,7 @@ const Services = () => {
                     onClick={() => {
                       if (name !== '' || email !== '' || phone !== '' || request !== '') {
                         axios
-                          .post('http://localhost:8000/get-form-data', { request, name, email, phone })
+                          .post('https://portfolio-for-finance-advisor-sb2q.vercel.app/get-form-data', { request, name, email, phone })
                           .then((response) => {
                             console.log(response.data); // Access the response data
                             // Handle the response data as needed
