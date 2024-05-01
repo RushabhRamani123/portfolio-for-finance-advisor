@@ -17,8 +17,8 @@ const WhyChoose = () => {
               <h1 data-aos="fade-down">Why Choose Us ?</h1>
               <p data-aos="fade-up" style={{color:'#808080',fontSize:'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>
           </div>
-          <div style={{display:'flex',justifyContent:'center', flexDirection:window.innerWidth<=430?'column':'row',alignItems:'space-around',gap:'10px' , margin:'50px 60px' ,}}>
-          <div style={{ display: 'flex',    flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
+          <div style={{display:'flex',justifyContent:'center', flexDirection:window.innerWidth<=430?'column':'row',alignItems:'space-around',gap:'10px' , margin:window.innerWidth<=430?'50px 16px':'50px 60px' ,}}>
+          <div style={{ display: 'flex',flexDirection: 'column', justifyContent: 'center', alignItems:'center', gap: '10px' }}>
   <img
     style={{ verticalAlign: 'top', maxWidth: '100%', height: 'auto' }}
     src="https://gaviaspreview.com/wp/winnex/wp-content/uploads/2018/10/icon-1.png"
