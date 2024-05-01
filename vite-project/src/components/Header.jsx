@@ -1,6 +1,6 @@
 import { IoCallOutline } from "react-icons/io5";
 import { motion } from "framer-motion"
-import logo from '../../public/logo.jpg'
+import logo from '../../public/logo.jpeg'
 import  { useState } from 'react';
 import { Button, Drawer } from 'antd';
 import {MenuOutlined } from "@ant-design/icons"; 
