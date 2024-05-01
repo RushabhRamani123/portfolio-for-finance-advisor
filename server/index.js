@@ -7,7 +7,7 @@ const cors = require('cors');
 const corsConfig = {
   origin: '*',
   credential: true, 
-  methods: ["GET", "POST"]
+  methods: ["GET", "POST","DELETE","PATCH","PUT","OPTIONS"]
 }
 app.use(cors(corsConfig));
 // Configure nodemailer transporter
