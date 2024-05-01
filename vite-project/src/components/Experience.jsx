@@ -52,7 +52,7 @@ const Achievement = () => {
       <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>{counter && <CountUp start={0} end={10} duration={5} />}</ScrollTrigger>
       <span style={{ marginLeft: '0.25rem' }}>+</span>
     </div>
-    <div style={{ fontSize:window.innerWidth<=430?'1.3rem':'2rem', color: '#333' }}>Years of Experience</div>
+    <div style={{ fontSize:window.innerWidth<=550?'1.3rem':'2rem', color: '#333' }}>Years of Experience</div>
   </div>
 
   <div style={{
@@ -78,7 +78,7 @@ const Achievement = () => {
     
       <span style={{ marginLeft: '0.25rem' }}>k</span>
     </div>
-    <div style={{ fontSize: window.innerWidth<=430?'1.43rem':'2rem', color: '#333' }}>Happy Customers</div>
+    <div style={{ fontSize: window.innerWidth<=550?'1.43rem':'2rem', color: '#333' }}>Happy Customers</div>
   </div>
 
   <div style={{
@@ -103,7 +103,7 @@ const Achievement = () => {
        <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>{counter && <CountUp start={0} end={100} duration={5} />}</ScrollTrigger>
       <span style={{ marginLeft: '0.25rem' }}>%</span>
     </div>
-    <div style={{ fontSize:window.innerWidth<=430?'2.2rem':'2rem', color: '#333' }}>Satisfaction</div>
+    <div style={{ fontSize:window.innerWidth<=550?'2.2rem':'2rem', color: '#333' }}>Satisfaction</div>
   </div>
 </div></>
   )

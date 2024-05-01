@@ -38,15 +38,15 @@ const Herosection = () => {
       {/*   */}
       <SwiperSlide>
         <div style={{ position: 'relative' }}>
-          <img  style={{height:window.innerWidth<=430?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_1} alt="" />
+          <img  style={{height:window.innerWidth<=550?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_1} alt="" />
           <div style={{
             position: 'absolute',
-            top:'35%', left:window.innerWidth<=430?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out'
+            top:'35%', left:window.innerWidth<=550?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out'
           }} data-aos="fade-up">
-            <h6 style={{ fontSize:window.innerWidth<=430?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px' ,color:'black'}} data-aos="fade-up">
+            <h6 style={{ fontSize:window.innerWidth<=550?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px' ,color:'black'}} data-aos="fade-up">
             Visualize your path to financial<br />freedom with our expert guidance
             </h6>
-            <p style={{ display:window.innerWidth<=430?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px',color:'grey' }} data-aos="fade-up">
+            <p style={{ display:window.innerWidth<=550?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px',color:'grey' }} data-aos="fade-up">
               To succeed in business today, you need to be flexible and<br />
               have good planning and organizational skills.
             </p>
@@ -55,12 +55,12 @@ const Herosection = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div style={{ position: 'relative' }}>
-          <img style={{height:window.innerWidth<=430?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_2} alt="" />
-          <div style={{ position: 'absolute', top: '35%', left:window.innerWidth<=430?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
-            <h6 style={{ fontSize:window.innerWidth<=430?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px',color:'black' }}>
+          <img style={{height:window.innerWidth<=550?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_2} alt="" />
+          <div style={{ position: 'absolute', top: '35%', left:window.innerWidth<=550?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
+            <h6 style={{ fontSize:window.innerWidth<=550?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px',color:'black' }}>
             Gain invaluable insights into<br />wealth management strategies
             </h6>
-            <p style={{ display:window.innerWidth<=430?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px' ,color:'grey'}}>
+            <p style={{ display:window.innerWidth<=550?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px' ,color:'grey'}}>
               To succeed in business today, you need to be flexible and<br />
               have good planning and organizational skills.
             </p>
@@ -70,12 +70,12 @@ const Herosection = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div style={{ position: 'relative' }}>
-          <img style={{height:window.innerWidth<=430?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_3} alt="" />
-          <div style={{ position: 'absolute', top: '35%', left:window.innerWidth<=430?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
-            <h6 style={{ fontSize:window.innerWidth<=430?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px',color:'black' }}>
+          <img style={{height:window.innerWidth<=550?'285px':window.innerWidth<=820?'490px':'100%'}} src={slider_3} alt="" />
+          <div style={{ position: 'absolute', top: '35%', left:window.innerWidth<=550?'35%':'25%', transform: 'translate(-50%, -50%)', opacity: showText ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
+            <h6 style={{ fontSize:window.innerWidth<=550?'15px':window.innerWidth<=840?'35px':'40px',bottom: '0px',color:'black' }}>
             Explore tailored solutions for <br />building your legacy portfolio
             </h6>
-            <p style={{ display:window.innerWidth<=430?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px',color:'grey' }}>
+            <p style={{ display:window.innerWidth<=550?'none':'flex',fontSize:window.innerWidth<=840?'13px':'19px',color:'grey' }}>
               To succeed in business today, you need to be flexible and<br />
               have good planning and organizational skills.
             </p>

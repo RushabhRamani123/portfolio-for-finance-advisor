@@ -30,9 +30,9 @@ const Header = () => {
 
       }}>
       {/* LOGO */}
-      <div style={{ color: "#93CB40", fontSize:window.innerWidth<=430?'20px':"30px", fontWeight: "bold" }}>
-        <img style={{width:window.innerWidth<=430?'50px':"70px",height:window.innerWidth<=430?'50px':"70px"}} src={logo}></img>
-        {/* Sia <span style={{ color: "black", fontSize:window.innerWidth<=430?'20px':"30px", fontWeight: "bold" }}>Consultancy</span> */}
+      <div style={{ color: "#93CB40", fontSize:window.innerWidth<=550?'20px':"30px", fontWeight: "bold" }}>
+        <img style={{width:window.innerWidth<=550?'50px':"70px",height:window.innerWidth<=550?'50px':"70px"}} src={logo}></img>
+        {/* Sia <span style={{ color: "black", fontSize:window.innerWidth<=550?'20px':"30px", fontWeight: "bold" }}>Consultancy</span> */}
       </div>
       {/* NAV Settings */}
       <div>
@@ -55,10 +55,10 @@ const Header = () => {
      {window.innerWidth>900&&<motion.div
         style={{ cursor: 'pointer', display: 'flex', gap: '10px', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{color: "grey", fontSize: "50px",display:window.innerWidth<=986?'none':'flex'}}>|</div>
-        <IoCallOutline style={{ color: "#93CB40", fontSize:window.innerWidth<=430?'30px':"40px", fontWeight: "bold" }} />
+        <IoCallOutline style={{ color: "#93CB40", fontSize:window.innerWidth<=550?'30px':"40px", fontWeight: "bold" }} />
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "start" , gap:'2px' }}>
-          <div style={{color: "grey",fontSize:window.innerWidth<=430?'15px':"20px"}}>Call us anytime</div>
-          <div style={{fontWeight: "bold",fontSize:window.innerWidth<=430?'15px':"20px"}}> +91 9172846729</div>
+          <div style={{color: "grey",fontSize:window.innerWidth<=550?'15px':"20px"}}>Call us anytime</div>
+          <div style={{fontWeight: "bold",fontSize:window.innerWidth<=550?'15px':"20px"}}> +91 9172846729</div>
         </div>
       </motion.div>}
      {window.innerWidth<=900&& <Button icon={<MenuOutlined />} onClick={showDrawer}>

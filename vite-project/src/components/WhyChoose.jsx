@@ -15,9 +15,9 @@ const WhyChoose = () => {
     <div style={{marginTop:'100px'}}>
           <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'10px',marginTop:'50px'}} >
               <h1 data-aos="fade-down">Why Choose Us ?</h1>
-              <p data-aos="fade-up" style={{color:'#808080',fontSize:window.innerWidth<=430?'11px':'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>
+              <p data-aos="fade-up" style={{color:'#808080',fontSize:window.innerWidth<=550?'11px':'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>
           </div>
-          <div style={{display:'flex',justifyContent:'center', flexDirection:window.innerWidth<=430?'column':'row',alignItems:'space-around',gap:'10px' , margin:window.innerWidth<=430?'50px 16px':'50px 60px' ,}}>
+          <div style={{display:'flex',justifyContent:'center', flexDirection:window.innerWidth<=550?'column':'row',alignItems:'space-around',gap:'10px' , margin:window.innerWidth<=550?'50px 16px':'50px 60px' ,}}>
           <div style={{ display: 'flex',flexDirection: 'column', justifyContent: 'center', alignItems:'center', gap: '10px' }}>
   <img
     style={{ verticalAlign: 'top', maxWidth: '100%', height: 'auto' }}
@@ -104,7 +104,7 @@ const WhyChoose = () => {
         <div style={{position:'relative'}}>
         <img style={{ width: '100%', height: '200px', objectFit: 'cover' }} src={bg} alt="" />
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-          <h1 style={{ color: 'white', fontSize:window.innerWidth<=430?'20px':'30px' }} data-aos="fade-up">Sia Consultant is always with you</h1>
+          <h1 style={{ color: 'white', fontSize:window.innerWidth<=550?'20px':'30px' }} data-aos="fade-up">Sia Consultant is always with you</h1>
           <p style={{ color: 'white' }}  data-aos="fade-up">Are you looking to grow, or even launch, your business?</p>
         </div>
         </div>
