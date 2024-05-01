@@ -76,7 +76,7 @@ const Achievement = () => {
       fontWeight: 'bold',
       color: '#ffa07a'
           }}>
-            <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>{counter && <CountUp start={0} end={95} duration={5} />}</ScrollTrigger>
+            <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>{counter && <CountUp start={0} end={5} duration={5} />}</ScrollTrigger>
     
       <span style={{ marginLeft: '0.25rem' }}>k</span>
     </div>
