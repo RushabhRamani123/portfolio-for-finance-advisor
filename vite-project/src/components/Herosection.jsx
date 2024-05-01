@@ -26,10 +26,12 @@ const Herosection = () => {
   }, []);
 
   return (
+   
     <Swiper
       pagination={{
         type: 'progressbar',
       }}
+      style={{ overflowX: 'hidden', overflowY: 'hidden', }}
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper"

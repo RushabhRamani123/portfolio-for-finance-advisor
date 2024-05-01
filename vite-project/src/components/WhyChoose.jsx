@@ -12,7 +12,7 @@ const WhyChoose = () => {
     });
   })
   return (
-    <div style={{marginTop:'100px'}}>
+    <div style={{marginTop:'100px', overflowX: 'hidden' , overflowY: 'hidden' }}>
           <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'10px',marginTop:'50px'}} >
               <h1 data-aos="fade-down">Why Choose Us ?</h1>
               <p data-aos="fade-up" style={{color:'#808080',fontSize:window.innerWidth<=550?'11px':'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>

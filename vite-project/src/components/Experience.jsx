@@ -20,7 +20,9 @@ const Achievement = () => {
       <p style={{ color: '#808080' }}>Build Strategies, Build Confidence, Build Your Business.</p>
       
     </div> */}
-    <div style={{
+      <div style={{
+       overflowY: 'hidden',  
+      overflowX: 'hidden',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

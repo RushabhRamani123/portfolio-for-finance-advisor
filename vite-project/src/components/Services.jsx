@@ -17,7 +17,7 @@ const Services = () => {
   })
   
   return (
-    <div id="services">
+    <div id="services" style={{ overflowX: 'hidden' ,        overflowY: 'hidden',}}>
       <h1 data-aos="fade-right" style={{ textAlign: 'center', marginTop: '100px', color: 'green' }}>
         <span>Our Services</span>
       </h1>

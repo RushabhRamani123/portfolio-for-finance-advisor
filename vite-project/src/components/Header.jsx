@@ -17,6 +17,8 @@ const Header = () => {
   return (//box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     <div
       style={{
+        overflowY: 'hidden',
+        overflowX: 'hidden',
         display: 'flex',
         padding: '10px',
         flexDirection: 'row',

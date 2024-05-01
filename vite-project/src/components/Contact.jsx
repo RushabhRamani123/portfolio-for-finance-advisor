@@ -34,20 +34,37 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: "'Roboto', sans-serif" }}>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '2rem' }}>
-      <h1 style={{ fontSize: '2.5rem', color: '#333', marginRight: '1rem' }}>Contact Details :</h1>
-      <div style={{ display: 'flex', alignItems: 'center', marginRight: '1rem', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem' }}>
-  <MdAddCall style={{ fontSize: '1.5rem', color: '#2e7d32' }} />
-  <p style={{ marginLeft: '0.5rem', color: '#2e7d32', fontWeight: 'bold' }} data-aos="fade-right">9172846729 / 9930808219
-</p>
-</div>
-<div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem' }}>
-  <IoMail style={{ fontSize: '1.5rem', color: '#2e7d32' }} />
-  <p style={{ marginLeft: '0.5rem', color: '#2e7d32', fontWeight: 'bold' }} data-aos="fade-right">bhavinishah99@gmail.com / kauvin23@gmail.com </p>
-</div>
+    <div style={{ display: 'flex', flexDirection: 'column',overflowX: 'hidden',overflowY: 'hidden', alignItems: 'center', fontFamily: "'Roboto', sans-serif" }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '2rem', backgroundColor: '#f0f0f0', padding: '1rem', borderRadius: '0.5rem' }}>
+  <p style={{ fontSize:window.innerWidth > 520 ? '1rem' : '2.5rem', color: '#333', marginRight: '1rem' }} data-aos="fade-right">Contact Details :</p>
+  <div style={{ display: 'flex', alignItems: 'center', marginRight: '1rem', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem', marginTop: '0.5rem' }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem',
+            height: '2rem', backgroundColor: '#2e7d32', borderRadius: '50%'
+          }}
+            data-aos="fade-up"
+
+          >
+            <MdAddCall style={{ fontSize: '1.5rem', color: '#ffffff' }}
+              
+            />
     </div>
-    <div style={{ maxWidth: '800px', width: '100%', padding: '2rem', backgroundColor: '#f8f8f8', borderRadius: '0.5rem', boxShadow: '0 0.25rem 0.5rem rgba(0, 0, 0, 0.1)', marginBottom: '5rem' }} data-aos="fade-up">
+    <p style={{ marginLeft: '0.5rem', color: '#2e7d32', fontWeight: 'bold' }} data-aos="fade-right">9172846729 / 9930808219</p>
+  </div>
+  <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem', marginTop: '0.5rem' }}>
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem', height: '2rem',
+            backgroundColor: '#2e7d32', borderRadius: '50%'
+
+          }}
+          data-aos="fade-down"
+          >
+      <IoMail style={{ fontSize: '1.5rem', color: '#ffffff' }} />
+    </div>
+    <p style={{ marginLeft: '0.5rem', color: '#2e7d32', fontWeight: 'bold' }} data-aos="fade-right">bhavinishah99@gmail.com / kauvin23@gmail.com</p>
+  </div>
+</div>
+    {/* <div style={{ maxWidth: '800px', width: '100%', padding: '2rem', backgroundColor: '#f8f8f8', borderRadius: '0.5rem', boxShadow: '0 0.25rem 0.5rem rgba(0, 0, 0, 0.1)', marginBottom: '5rem' }} data-aos="fade-up">
       <div style={{ backgroundColor: '#fff', padding: '2rem', borderRadius: '0.5rem', boxShadow: '0 0.25rem 0.5rem rgba(0, 0, 0, 0.1)' }} id="contact">
         <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '2rem', color: '#333' }} data-aos="fade-left">
           Send Us A Message
@@ -148,7 +165,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </div> */}
   </div>
   );
 };

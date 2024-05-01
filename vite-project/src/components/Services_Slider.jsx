@@ -23,6 +23,8 @@ useEffect(() => {
   return (
     <section style={{
       display: 'flex',
+      overflowY: 'hidden',
+      overflowX: 'hidden' ,
       flexWrap: window.innerWidth >= 550 ? 'wrap' : 'nowrap',
       justifyContent: window.innerWidth <= 550 ? 'center' : 'flex-start'
     }}>
