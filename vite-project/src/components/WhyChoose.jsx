@@ -15,7 +15,7 @@ const WhyChoose = () => {
     <div style={{marginTop:'100px'}}>
           <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:'10px',marginTop:'50px'}} >
               <h1 data-aos="fade-down">Why Choose Us ?</h1>
-              <p data-aos="fade-up" style={{color:'#808080',fontSize:'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>
+              <p data-aos="fade-up" style={{color:'#808080',fontSize:window.innerWidth<=430?'11px':'13px'}}>Build Strategies, Build Confidence, Build Your Business.</p>
           </div>
           <div style={{display:'flex',justifyContent:'center', flexDirection:window.innerWidth<=430?'column':'row',alignItems:'space-around',gap:'10px' , margin:window.innerWidth<=430?'50px 16px':'50px 60px' ,}}>
           <div style={{ display: 'flex',flexDirection: 'column', justifyContent: 'center', alignItems:'center', gap: '10px' }}>
