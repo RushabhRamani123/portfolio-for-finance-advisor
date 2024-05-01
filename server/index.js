@@ -3,8 +3,13 @@ const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const port = '8000';
-const router = express.Router(); 
 const cors = require('cors');
+const corsConfig = {
+  origin: '*',
+  credential: true, 
+  methods: ["GET", "POST"]
+}
+app.use(cors(corsConfig));
 // Configure nodemailer transporter
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -13,7 +18,6 @@ let transporter = nodemailer.createTransport({
     pass: 'fkoc afsw zcli psue' // Replace with your actual password or use environment variables
   }
 });
-app.use(cors());
 // Parse incoming request bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
