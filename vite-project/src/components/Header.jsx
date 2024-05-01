@@ -66,7 +66,7 @@ const Header = () => {
      {window.innerWidth<=900&& <Button icon={<MenuOutlined />} onClick={showDrawer}>
        
       </Button>}
-      <Drawer title="Basic Drawer" onClose={onClose} open={open}>
+      <Drawer title="Menu" onClose={onClose} open={open}>
       <div style={{ display:'flex', flexDirection: 'column', gap: '15px', listStyle: 'none', cursor: 'pointer', fontSize: '20px' }}>
           <Link
             spy={true} smooth={true} offset={60} duration={500}

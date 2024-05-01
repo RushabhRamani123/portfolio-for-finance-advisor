@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column',overflowX: 'hidden',overflowY: 'hidden', alignItems: 'center', fontFamily: "'Roboto', sans-serif" }}>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '2rem', backgroundColor: '#f0f0f0', padding: '1rem', borderRadius: '0.5rem' }}>
-  <h3 style={{ fontSize:window.innerWidth > 520 ? '1rem' : '2.5rem', color: '#333', marginRight: '1rem'}} data-aos="fade-right">Contact Details :</h3>
+  <h3 style={{ fontSize:window.innerWidth > 520 ? '1rem' : '2.5rem', color: '#333', marginRight: '1rem'}} data-aos="fade-right">Contact Details</h3>
   <div style={{ display: 'flex', alignItems: 'center', marginRight: '1rem', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem', marginTop: '0.5rem' }}>
           <div style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem',
