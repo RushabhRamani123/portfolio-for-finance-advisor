@@ -21,8 +21,12 @@ useEffect(() => {
   });
 })
   return (
-    <section style={{ display: 'flex', flexWrap:window.innerWidth>=430?'wrap':'nowrap', justifyContent:window.innerWidth<=430?'center':'flex-start' }}>
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+    <section style={{
+      display: 'flex',
+      flexWrap: window.innerWidth >= 430 ? 'wrap' : 'nowrap',
+      justifyContent: window.innerWidth <= 430 ? 'center' : 'flex-start'
+    }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       
       <Card
         hoverable

@@ -21,19 +21,22 @@ const Services = () => {
       <h1 data-aos="fade-right" style={{ textAlign: 'center', marginTop: '100px', color: 'green' }}>
         <span>Our Services</span>
       </h1>
-      <div style={{
-        marginTop: '50px',
-        display: 'flex',
-        flexDirection: window.innerWidth <= 430 ? 'column' :window.innerWidth <= 840 ? 'column' : 'row',
-        justifyContent: 'center', alignItems: window.innerWidth <= 430 ? 'center' :window.innerWidth <= 840 ? 'center' : 'flex-start',
-        gap: '10px'
-      }} id="services">
-  {/* <h1>Our Services</h1> */}
-      <div style={{ width: '50%' }}>
+      <div
+      >
+
+     
       <Services_Slider/>
-      </div>
       
-        <div className="container"
+      
+      
+   </div>
+    </div>
+  );
+};
+
+export default Services;
+
+  {/* <div className="container"
           data-aos="fade-down"
         >
       <div className="service-box" >
@@ -112,10 +115,4 @@ const Services = () => {
           </form>
         </div>
       </div>
-    </div>
-   </div>
-    </div>
-  );
-};
-
-export default Services;
+    </div> */}
