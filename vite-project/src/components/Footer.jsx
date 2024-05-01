@@ -25,7 +25,7 @@ const Footer = () => {
               fontSize: '0.9rem',
               opacity: '0.8'
             }}>
-             Copyright &copy; 2024 - Websitewala - All rights reserved.
+             Copyright &copy; 2024 - Rushabh Ramani - All rights reserved.
             </div>
           </div>
         </div>
