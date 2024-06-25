@@ -1,42 +1,42 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect , useState} from "react";
-import axios from 'axios';
+import { useEffect } from "react";
+// import axios from 'axios';
 import { MdAddCall } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 5000 });
   }, []);
-  const [name, setName] = useState(''); 
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [request, setMessage] = useState(''); 
+  // const [name, setName] = useState(''); 
+  // const [email, setEmail] = useState('');
+  // const [subject, setSubject] = useState('');
+  // const [request, setMessage] = useState(''); 
 
-  const responsiveStyles = {
-    '@media (max-width: 420px)': {
-      gridTemplateColumns: '1fr',
-      padding: '1rem',
-      fontSize: '0.9rem',
-      button: {
-        padding: '0.5rem 1rem',
-        fontSize: '0.9rem',
-      },
-      input: {
-        padding: '0.5rem',
-        fontSize: '0.9rem',
-      },
-      textarea: {
-        padding: '0.5rem',
-        fontSize: '0.9rem',
-      },
-    },
-  };
+  // const responsiveStyles = {
+  //   '@media (max-width: 420px)': {
+  //     gridTemplateColumns: '1fr',
+  //     padding: '1rem',
+  //     fontSize: '0.9rem',
+  //     button: {
+  //       padding: '0.5rem 1rem',
+  //       fontSize: '0.9rem',
+  //     },
+  //     input: {
+  //       padding: '0.5rem',
+  //       fontSize: '0.9rem',
+  //     },
+  //     textarea: {
+  //       padding: '0.5rem',
+  //       fontSize: '0.9rem',
+  //     },
+  //   },
+  // };
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column',overflowX: 'hidden',overflowY: 'hidden', alignItems: 'center', fontFamily: "'Roboto', sans-serif" }}>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '2rem', backgroundColor: '#f0f0f0', padding: '1rem', borderRadius: '0.5rem' }}>
-  <h3 style={{ fontSize:window.innerWidth > 520 ? '1rem' : '2.5rem', color: '#333', marginRight: '1rem'}} data-aos="fade-right">Contact Details</h3>
+  <h3 style={{ fontSize:window.innerWidth > 600 ? '2.5rem' : '1.5rem', color: '#333', marginRight: '1rem'}} data-aos="fade-right">Contact Details</h3>
   <div style={{ display: 'flex', alignItems: 'center', marginRight: '1rem', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem', marginTop: '0.5rem' }}>
           <div style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem',
@@ -53,7 +53,7 @@ const Contact = () => {
   </div>
   <div style={{ display: 'flex', alignItems: 'center', backgroundColor: '#e6f5e6', padding: '0.5rem', borderRadius: '0.25rem', marginTop: '0.5rem' }}>
           <div style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem', height: '2rem',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2.75rem', height: '2.25rem',
             backgroundColor: '#2e7d32', borderRadius: '50%'
 
           }}

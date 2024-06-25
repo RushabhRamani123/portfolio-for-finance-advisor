@@ -6,6 +6,7 @@ import Herosection from './components/Herosection';
 import Footer from './components/Footer';
 import Contact from "./components/Contact";
 import Company from "./components/company";
+import WhatsAppButton from "./components/WhatsAppButton";
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <Company />
       <Contact />
       <Footer />
+      <WhatsAppButton/>
     </>
   );
 }

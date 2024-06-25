@@ -1,15 +1,15 @@
 import './service.css';
 import AOS from 'aos';  
 import 'aos/dist/aos.css';
-import { useEffect , useState} from "react";
+import { useEffect } from "react";
 import Services_Slider from './Services_Slider';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Services = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [request, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [request, setMessage] = useState('');
   useEffect(() => {
     AOS.init({
       duration: 800,

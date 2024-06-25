@@ -1,6 +1,6 @@
 import { IoCallOutline } from "react-icons/io5";
 import { motion } from "framer-motion"
-import logo from '../../public/logo.png'
+// import logo from '../../public/logo.png'
 import  { useState } from 'react';
 import { Button, Drawer } from 'antd';
 import {MenuOutlined } from "@ant-design/icons"; 
@@ -14,7 +14,8 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
-  return (//box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  return (
+  //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     <div
       style={{
         overflowY: 'hidden',
@@ -33,8 +34,8 @@ const Header = () => {
       }}>
       {/* LOGO */}
       <div style={{ color: "#93CB40", fontSize:window.innerWidth<=550?'20px':"30px", fontWeight: "bold" }}>
-        <img style={{width:window.innerWidth<=550?'50px':"70px",height:window.innerWidth<=550?'50px':"70px"}} src={logo}></img>
-        {/* Sia <span style={{ color: "black", fontSize:window.innerWidth<=550?'20px':"30px", fontWeight: "bold" }}>Consultancy</span> */}
+        {/* <img style={{width:window.innerWidth<=550?'50px':"70px",height:window.innerWidth<=550?'50px':"70px"}} src={logo}></img> */}
+        Sia <span style={{ color: "black", fontSize:window.innerWidth<=550?'20px':"30px", fontWeight: "bold" }}>Consultancy</span>
       </div>
       {/* NAV Settings */}
       <div>
